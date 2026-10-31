@@ -29,7 +29,7 @@ Os mesmos preços estão no início do `script.js`.
 
 1. Baixe ou clone o repositório.
 2. Deixe os arquivos juntos na mesma pasta.
-3. Abra o `index.html` no navegador (duplo clique).
+3. Abra o `index.html` no navegador.
 4. Clique em **"Simular compra"** e responda às perguntas.
 
 
@@ -59,18 +59,27 @@ Testei com respostas simuladas e também clicando no botão no navegador, sem er
 
 | # | Entrada (Ração, Osso, Coleira, Shampoo) | Resultado |
 
-| 1 | 2, 1, 3, 0 | Total R$ 149,00 (59,80 + 14,50 + 74,70) <img width="441" height="257" alt="image" src="https://github.com/user-attachments/assets/bca58dc2-d1f6-45a4-bf71-6974ccdb0179" />
+| 1 | 2, 1, 3, 0 | Total R$ 149,00 (59,80 + 14,50 + 74,70) 
+<img width="490" height="275" alt="image" src="https://github.com/user-attachments/assets/63d4f4cd-5fb3-4d8a-b260-780d3fc00bfd" />
 
 
-| 2 | 0, 0, 0, 0 | "Nenhum produto foi selecionado."                   <img width="441" height="125" alt="image" src="https://github.com/user-attachments/assets/e737b706-a668-4f25-adc1-3aca7322793d" />
 
-| 3 | 0, 0, 0, 3 | Total R$ 59,70                                      <img width="438" height="269" alt="image" src="https://github.com/user-attachments/assets/87febc41-d144-40e6-a281-50ac8a2c1dc5" />
+| 2 | 0, 0, 0, 0 | "Nenhum produto foi selecionado."        
+<img width="441" height="125" alt="image" src="https://github.com/user-attachments/assets/e737b706-a668-4f25-adc1-3aca7322793d" />
 
-| 4 | 1, `abc`, 0, 0 | Aviso de valor inválido                           <img width="423" height="150" alt="image" src="https://github.com/user-attachments/assets/b0f76f3c-e4ac-4324-b090-fe6508b80391" />
+| 3 | 0, 0, 0, 3 | Total R$ 59,70                                   
+<img width="438" height="269" alt="image" src="https://github.com/user-attachments/assets/87febc41-d144-40e6-a281-50ac8a2c1dc5" />
 
-| 5 | -1, 0, 0, 0 | Aviso de valor inválido                              <img width="425" height="131" alt="image" src="https://github.com/user-attachments/assets/c1d442bf-85e2-4646-8c42-03fd3542e161" />
+| 4 | 1, `abc`, 0, 0 | Aviso de valor inválido                     
+<img width="423" height="150" alt="image" src="https://github.com/user-attachments/assets/b0f76f3c-e4ac-4324-b090-fe6508b80391" />
 
-| 6 | Clicar em "Cancelar" nas perguntas | "Nenhum produto foi selecionado." <img width="439" height="134" alt="image" src="https://github.com/user-attachments/assets/eb7ab973-fc64-4fcc-93ed-d1ce0200e1a2" />
+| 5 | -1, 0, 0, 0 | Aviso de valor inválido                         
+<img width="425" height="131" alt="image" src="https://github.com/user-attachments/assets/c1d442bf-85e2-4646-8c42-03fd3542e161" />
+
+
+| 6 | Clicar em "Cancelar" nas perguntas | "Nenhum produto foi selecionado."
+
+<img width="439" height="134" alt="image" src="https://github.com/user-attachments/assets/eb7ab973-fc64-4fcc-93ed-d1ce0200e1a2" />
 
 | 7 | Testei a responsividade pelo F12 do navegador (modo celular), com larguras de 360, 375 e 414 px: sem rolagem lateral e com os produtos legíveis.
 **O que poderia melhorar:** os cartões têm altura fixa (`height: 340px`) e largura fixa (`220px`), o que deixa espaço em branco embaixo e não aproveita telas maiores.
