@@ -1,0 +1,132 @@
+/* O width passa a incluir padding e borda */
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #2d3a4a;
+  background-color: #fff5f5;
+  margin: 0;                        /* tira a margem padrão do navegador */
+}
+ 
+/* ---------- Cabeçalho ---------- */
+.topo {
+  background-color: #c62828;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+ 
+.topo h1 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+ 
+.descricao {
+  font-size: 18px;
+  margin: 0;
+}
+ 
+/* ---------- Seções ---------- */
+.secao {
+  padding: 20px;
+  text-align: center;               /* centraliza o conteúdo da seção */
+}
+ 
+.secao h2 {
+  font-size: 26px;
+  color: #b71c1c;
+}
+ 
+/* ---------- Produtos ---------- */
+/* inline-block faz os cartões ficarem lado a lado,
+   e caírem para a linha de baixo quando a tela é pequena */
+.produto {
+  display: inline-block;            /*  deixa os cartões lado a lado */
+  vertical-align: top;              /*  alinha os cartões pelo topo */
+  width: 220px;
+  height: 340px;                    /* EXTRA: mesma altura para todos os cartões */
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+ 
+.produto:hover {
+  transform: translateY(-6px);
+}
+ 
+.icone {
+  font-size: 64px;                  /* tamanho do emoji */
+  height: 110px;                    /* : mesma altura para foto e emoji */
+  line-height: 110px;               /*  centraliza o emoji na caixa */
+}
+ 
+/* fotos dos produtos (a pasta assets guarda as imagens) */
+.icone img {
+  vertical-align: middle;           /* deixa a foto no meio da caixa */
+  max-width: 100%;                  /*  a foto nunca passa da largura do cartão */
+  max-height: 100px;                /* nem da altura */
+}
+ 
+.produto h3 {
+  font-size: 18px;
+  color: #b71c1c;
+  margin: 10px 0;
+}
+ 
+.produto p {
+  font-size: 15px;
+  margin: 0 0 12px 0;
+}
+ 
+.produto .preco {
+  font-size: 20px;
+  font-weight: 700;                 /* 700 = negrito */
+  color: #b71c1c;
+}
+ 
+/* ---------- Instruções e botão ---------- */
+.instrucoes {
+  background-color: white;
+  border: 2px solid #c62828;
+  border-radius: 8px;
+  margin: 20px;
+}
+ 
+.instrucoes ol {
+  text-align: left;                 /* a lista fica alinhada à esquerda */
+  line-height: 1.8;                 /* EXTRA: espaço entre as linhas */
+}
+ 
+.botao {
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #e53935;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;                  /* mãozinha de clicável */
+  transition: 0.3s;                 /* na regra normal, não no :hover */
+}
+ 
+.botao:hover {
+  background-color: #b71c1c;
+  transform: translateY(-4px);
+}
+ 
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #7f0000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+ 
+.rodape p {
+  margin: 0;
+}
