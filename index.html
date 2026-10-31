@@ -1,5 +1,81 @@
-<html>
-    <head>
-        
-    </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Cabeçalho: nome e breve descrição da loja ===== -->
+  <header class="topo">
+    <h1>Pet Love</h1>
+    <p class="descricao">
+      Tudo o que o seu melhor amigo precisa em um só lugar: alimentação de qualidade,
+      brinquedos divertidos e acessórios para passear com conforto e segurança.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- ===== Produtos (preços iguais aos do script.js) ===== -->
+    <section class="secao">
+      <h2>Nossos produtos</h2>
+
+      <div class="produtos">
+
+        <article class="produto">
+          <div class="icone"><img src="assets/racao.jpg" alt="Tigela com ração para cães"></div>
+          <h3>Ração Premium 1 kg</h3>
+          <p>Ração completa para cães adultos, rica em proteínas e vitaminas.</p>
+          <p class="preco">R$ 29,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="icone">🦴</div>
+          <h3>Osso de Nylon</h3>
+          <p>Mordedor resistente que ajuda a limpar os dentes e gasta energia.</p>
+          <p class="preco">R$ 14,50</p>
+        </article>
+
+        <article class="produto">
+          <div class="icone"><img src="assets/coleira.jpg" alt="Coleira de couro vermelha"></div>
+          <h3>Coleira de Couro</h3>
+          <p>Coleira de couro vermelha com fivela, resistente e ajustável.</p>
+          <p class="preco">R$ 24,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="icone"><img src="assets/shampoo.jpg" alt="Frasco de shampoo neutro para cães"></div>
+          <h3>Shampoo Neutro 700 ml</h3>
+          <p>Shampoo neutro para todos os tipos de pelo, deixa o pelo macio e brilhante.</p>
+          <p class="preco">R$ 19,90</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Instruções de uso e botão ===== -->
+    <section class="secao instrucoes">
+      <h2>Como usar o simulador</h2>
+      <ol>
+        <li>Clique no botão <strong>"Simular compra"</strong>.</li>
+        <li>Digite a quantidade de cada produto quando a caixa de pergunta aparecer.</li>
+        <li>Digite <strong>0</strong> se não quiser comprar aquele produto.</li>
+        <li>Veja o resumo com as quantidades, os valores de cada produto e o total.</li>
+      </ol>
+
+      <button class="botao" onclick="simularCompra()">Simular compra</button>
+    </section>
+
+  </main>
+
+  <!-- ===== Rodapé com o nome da aluna ===== -->
+  <footer class="rodape">
+    <p>Cibelle Vitoria Santos Veras</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
